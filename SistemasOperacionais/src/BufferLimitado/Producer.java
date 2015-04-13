@@ -2,17 +2,16 @@
  * Autores: Gabriel Ferraz e Rodolfo Bicalho
  * Data: 06/04/2015  
  */
-package Algoritmos;
+package BufferLimitado;
 
 import java.util.Date;
 
-public class Consumer implements Runnable{
-
+public class Producer implements Runnable
+{
 	private Buffer buffer;
 	
-	public Consumer(Buffer buffer) {
+	public Producer(Buffer buffer) {
 		this.buffer = buffer;
-
 	}
 
 	public void run() {
@@ -20,15 +19,18 @@ public class Consumer implements Runnable{
 		
 		while (true){
 			SleepUtilities.nap();
+			message = new Date();
 			try {
-				message = (Date)buffer.remove();
-				System.out.println("Consumiu " + message);
+				buffer.insert(message);
+				System.out.println("Produziu " + message);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 			
-		}	
+			
+		}
+		
 	}
 
 }

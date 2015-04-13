@@ -2,7 +2,7 @@
  * Autores: Gabriel Ferraz e Rodolfo Bicalho
  * Data: 06/04/2015 
  */
-package Algoritmos;
+package BufferLimitado;
 
 public interface Buffer {
 

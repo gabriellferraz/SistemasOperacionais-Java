@@ -1,8 +1,8 @@
 /**
  * Autores: Gabriel Ferraz e Rodolfo Bicalho
- * Data: 06/04/2015 
+ * Data: 13/04/2015 
  */
-package Algoritmos;
+package LeitoresEscritores;
 
 public class SleepUtilities
 {

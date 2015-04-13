@@ -3,7 +3,7 @@
  * Data: 06/04/2015  
  */
 
-package Algoritmos;
+package BufferLimitado;
 
 import java.util.concurrent.Semaphore;
 
